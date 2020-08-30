@@ -5,7 +5,7 @@ A Discord Server Bot written in Python
 
 ## Getting Started
 
-### Pull the repo
+### Clone the Repository
 
 ```
 git clone git@github.com:kurtaking/co-discord-bot.git
