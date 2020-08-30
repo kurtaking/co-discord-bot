@@ -17,7 +17,7 @@ cd co-discord-bot/
 ```
 
 ### Install the required dependencies
-Note: It is recommended that you use a <a href="https://virtualenv.pypa.io/en/stable/installation.html" target="_blank">Virtual Environment</a> prior to installing packages  
+Note: It is recommended that you use a [Virtual Environment](https://virtualenv.pypa.io/en/stable/installation.html) prior to installing packages  
 ```
 pip install -r requirements.txt
 ```
