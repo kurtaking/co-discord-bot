@@ -21,5 +21,3 @@ Note: It is recommended that you use a <a href="https://virtualenv.pypa.io/en/st
 ```
 pip install -r requirements.txt
 ```
-
-<a href="http://example.com/" target="_blank">Hello, world!</a>
