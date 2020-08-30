@@ -11,7 +11,7 @@ A Discord Server Bot written in Python
 git clone git@github.com:kurtaking/co-discord-bot.git
 ```
 
-### cd into the root of the project directory
+### cd into the project directory
 ```
 cd co-discord-bot/
 ```
