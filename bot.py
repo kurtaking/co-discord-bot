@@ -21,6 +21,24 @@ bot = commands.Bot(command_prefix='/')
 bot.add_cog(Greetings.Greetings(bot))
 bot.add_cog(Random.Random(bot))
 
+
+@bot.event
+async def on_message(message):
+    content = message.content.lower()
+    print(message)
+    print(message.author)
+
+    if message.author == bot.user:
+        return
+
+    if 'party' in content:
+        author = str(message.author.nick)
+        await message.channel.send(f"Fuck yeah {author}, let's get the party started!")
+
+    if 'trump' in content:
+        await message.channel.send(f"Man.. I hear that dude is a piece of shit")
+
+
 # Start the Bot
 print(f'Connected to the Discord Server - {GUILD_NAME}')
 bot.run(TOKEN)
