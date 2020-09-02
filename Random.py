@@ -55,11 +55,3 @@ class Random(commands.Cog):
         insult = response.json()['insult']
 
         await ctx.send(insult_member + ', ' + insult)
-
-    """
-    @commands.Cog.listener()
-    async def on_message(self, ctx):
-        if 'party' in str(ctx.content):
-            author = str(ctx.author)
-            await ctx.send(f"Fuck yeah {author}, let's get the party started!")
-    """

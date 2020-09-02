@@ -1,6 +1,7 @@
 # bot.py
 import os
 from discord.ext import commands
+from discord import reaction
 from dotenv import load_dotenv
 import Greetings
 import Random
@@ -37,6 +38,8 @@ async def on_message(message):
 
     if os.getenv('T_HIDDEN') in content:
         if os.getenv('TF_HIDDEN') in content:
+            emoji = '\N{THUMBS UP SIGN}'
+            await message.add_reaction(emoji)
             await message.channel.send(os.getenv('TF_RESPONSE'))
         else:
             await message.channel.send(os.getenv('T_RESPONSE'))
