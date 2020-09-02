@@ -4,7 +4,6 @@ from discord.ext import commands
 from dotenv import load_dotenv
 import Greetings
 import Random
-import Sports
 
 print(f'Connecting...')
 
