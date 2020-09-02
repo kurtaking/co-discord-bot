@@ -38,7 +38,8 @@ async def on_message(message):
     if os.getenv('T_HIDDEN') in content:
         if os.getenv('TF_HIDDEN') in content:
             await message.channel.send(os.getenv('TF_RESPONSE'))
-        await message.channel.send(os.getenv('T_RESPONSE'))
+        else:
+            await message.channel.send(os.getenv('T_RESPONSE'))
 
 
 # Start the Bot
