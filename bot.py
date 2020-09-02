@@ -35,8 +35,8 @@ async def on_message(message):
         author = str(message.author.nick)
         await message.channel.send(f"Fuck yeah {author}, let's get the party started!")
 
-    if 'trump' in content:
-        await message.channel.send(f"Man.. I hear that dude is a piece of shit")
+    if os.getenv('T_HIDDEN') in content:
+        await message.channel.send(os.getenv('T_RESPONSE'))
 
 
 # Start the Bot
