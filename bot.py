@@ -20,7 +20,6 @@ bot = commands.Bot(command_prefix='/')
 #
 bot.add_cog(Greetings.Greetings(bot))
 bot.add_cog(Random.Random(bot))
-bot.add_cog(Sports.Sports(bot))
 
 # Start the Bot
 print(f'Connected to the Discord Server - {GUILD_NAME}')
