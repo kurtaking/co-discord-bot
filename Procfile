@@ -1,1 +1,1 @@
-worker: python3 co-discord-bot/bot.py
+worker: python3 bot.py
