@@ -10,6 +10,16 @@ class Random(commands.Cog):
         self._last_member = None
 
     @commands.command()
+    async def coinflip(self, ctx):
+        coin = 'Heads'
+        odds = random.randint(0, 3)
+
+        if odds == 1:
+            coin = 'Tails'
+
+        await ctx.send(coin)
+
+    @commands.command()
     async def dice(self, ctx, number_of_dice: int, number_of_sides: int):
         dice = [
             str(random.choice(range(1, number_of_sides + 1)))
@@ -30,7 +40,7 @@ class Random(commands.Cog):
         await ctx.send(joke)
 
     @commands.command()
-    async def insult(self, ctx, member):
+    async def insult(self, ctx, *, member):
         insult_member = member
 
         if 'myself' in member or 'me' in member:
