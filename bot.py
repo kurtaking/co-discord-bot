@@ -33,7 +33,7 @@ async def on_message(message):
 
     if 'party' in content:
         author = str(message.author.nick)
-        await message.channel.send(f"Fuck yeah {author}, let's get the party started!")
+        await message.channel.send(f"Did someone say party? I like to party. Want to get this party started {author}?")
 
     if os.getenv('T_HIDDEN') in content:
         await message.channel.send(os.getenv('T_RESPONSE'))
