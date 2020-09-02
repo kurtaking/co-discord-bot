@@ -41,6 +41,7 @@ async def on_message(message):
         else:
             await message.channel.send(os.getenv('T_RESPONSE'))
 
+    await bot.process_commands(message)
 
 # Start the Bot
 print(f'Connected to the Discord Server - {GUILD_NAME}')
