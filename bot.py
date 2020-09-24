@@ -36,13 +36,13 @@ async def on_message(message):
         author = str(message.author.nick)
         await message.channel.send(f"Did someone say party? I like to party. Want to get this party started {author}?")
 
-    if os.getenv('T_HIDDEN') in content:
-        if os.getenv('TF_HIDDEN') in content:
-            emoji = '\N{THUMBS UP SIGN}'
-            await message.add_reaction(emoji)
-            await message.channel.send(os.getenv('TF_RESPONSE'))
-        else:
-            await message.channel.send(os.getenv('T_RESPONSE'))
+    #if os.getenv('T_HIDDEN') in content:
+    #    if os.getenv('TF_HIDDEN') in content:
+    #        emoji = '\N{THUMBS UP SIGN}'
+    #        await message.add_reaction(emoji)
+    #        await message.channel.send(os.getenv('TF_RESPONSE'))
+    #    else:
+    #        await message.channel.send(os.getenv('T_RESPONSE'))
 
     await bot.process_commands(message)
 
