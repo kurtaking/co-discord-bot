@@ -32,7 +32,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    if 'party' in content and 'politic' not in message.channel:
+    if 'party' in content and 'politic' not in message.channel.name:
         author = str(message.author.nick)
         await message.channel.send(f"Did someone say party? I like to party. Want to get this party started {author}?")
 
